@@ -6,3 +6,4 @@ Tuomet iš šių duomenų, suskaičiuoja galutinį balą pagal formulę:
 **Galutinis = 0.4 * vidurkis + 0.6 * egzaminas**
 
 Pirmai versijai, studento duomenis aprašyti, naudota struktūra, taip pat sukurtos keletos funkcijos patogumui. Tikrinimui, ar paleidus programą vartotojas įvedė reikiamas reikšmes, panaudota REGEX (regular expresion).
+Papildymui, vietoj vidurkio galutinio balo skaičiavimui panaudota ir mediana. Išvedimas yra pasirinktinas vartotojui: Galutinis (Vid.) arba Galutinis (Med.)
