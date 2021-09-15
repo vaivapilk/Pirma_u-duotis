@@ -1,2 +1,2 @@
-# Pirma_u-duotis
+# Pirma_užduotis
 Pirma užduotis VU kursui "Objektinis programavimas su C++"
