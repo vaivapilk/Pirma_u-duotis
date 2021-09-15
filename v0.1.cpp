@@ -23,6 +23,7 @@ struct studentas {
     int nd[10] = {};
     int egz;
     float gal;
+    float median;
 };
 
 void clearInput() {
@@ -72,11 +73,17 @@ void pild(studentas& kint) {
     cout << "Iveskite egzamino pazymi: " << endl;
     tikrinam_regex(kint.egz);
     kint.gal = vid * 0.4 + kint.egz * 0.6;
+
+    //medianos skaiciavimas
+    sort(kint.nd, kint.nd + n);
+    if (n % 2 != 0)
+        kint.median = kint.nd[n / 2];
+    else
+        kint.median = (kint.nd[(n - 1) / 2] + kint.nd[n / 2]) / 2.0;
 }
 
 void printas(studentas& kin) {
     cout << setw(15) << left << kin.pavard << setw(15) << kin.vard;
-    cout << setw(10) << left << fixed << setprecision(2) << kin.gal << endl;
 }
 
 
@@ -103,10 +110,42 @@ int main()
     for (int i = 0; i < stud_kiek; i++)
         pild(studentai[i]);
 
-    cout << setw(15) << left << "Pavarde " << setw(15) << "Vardas " << setw(10) << "Galutinis (Vid.) " << endl;
+    //medianos arba vidurkio uzklausa bei tikrinimas, kad ivesti teisingi simboliai
+    char uzk;
+    while (true)
+    {
+        cout << "Jei norite, kad butu suskaiciuotas vidurkis, parasykite 'v', o jei norite medianos - 'm'" << endl;
+        cin >> uzk;
+        if (uzk == 'v' || uzk == 'm'){
+            break;
+        }
+        else {
+            cout << "Ivestis klaidinga, bandykite is naujo " << endl;
+            clearInput();
+        }
+    }
+
+    //isvedimas
+    cout << setw(15) << left << "Pavarde " << setw(15) << "Vardas ";
+
+    if (uzk == 'v'){
+        cout << setw(10) << "Galutinis (Vid.) " << endl;
+    }
+    if (uzk == 'm'){
+        cout << setw(10) << "Galutinis (Med.) " << endl;
+    }
+
+    
     for (int i = 0; i < 50; i++)
         cout << "-";
     cout << endl;
-    for (int i = 0; i < stud_kiek; i++)
+    for (int i = 0; i < stud_kiek; i++) {
         printas(studentai[i]);
+        if (uzk == 'v'){
+            cout << setw(10) << left << fixed << setprecision(2) << studentai[i].gal << endl;
+        }
+        if (uzk == 'm') {
+            cout << setw(10) << left << fixed << setprecision(2) << studentai[i].median << endl;
+        }
+    }
 }
