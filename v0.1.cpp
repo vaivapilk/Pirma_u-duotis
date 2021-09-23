@@ -20,7 +20,7 @@ using std::regex_match;
 struct studentas {
     string vard, pavard;
     //nusprendziau, kad pazymiai gali buti tik sveikieji skaiciai
-    int nd[10] = {};
+    int* nd = new(std::nothrow) int[5];
     int egz;
     float gal;
     float median;
@@ -53,21 +53,34 @@ void pild(studentas& kint) {
     int n;
     string nn;
     cout << "Iveskite studento varda ir pavarde: "; cin >> kint.vard >> kint.pavard;
-
-    cout << "Kiek namu darbu bus? (1-10) " << endl;
-    tikrinam_regex(n);
-
-    cout << "Iveskite pazymius: " << endl;
+    cout << "Iveskite pazymius, kai nuspresite, kad jau ivedete visus (iki 10 pazymiu), parasykite 'q' " << endl;
 
     float sum = 0, vid = 0, med = 0;
 
-    int a;
-    for (int i = 0; i < n; i++) {
-        tikrinam_regex(kint.nd[i]);
-        a = kint.nd[i];
-        sum += a;
-
+    string input;
+    regex integer("^([1-9]|1[0])$");
+    int i = 0;
+    while (true)
+    {
+        cin >> input;
+        if (input == "q")
+            break;
+        if (regex_match(input, integer))
+        {
+            kint.nd[i] = std::stoi(input);
+            sum += kint.nd[i];
+            i++;
+        }
+        else
+        {
+            cout << "Ivestis klaidinga! Pabandykite is naujo " << endl;
+            clearInput();
+        }
+        //if(!kint.nd) cout << "allocation of memory failed\n";
+        
     }
+    n = i;
+   
     vid = sum / n;
 
     cout << "Iveskite egzamino pazymi: " << endl;
@@ -147,5 +160,6 @@ int main()
         if (uzk == 'm') {
             cout << setw(10) << left << fixed << setprecision(2) << studentai[i].median << endl;
         }
+       delete[] studentai[i].nd;
     }
 }
