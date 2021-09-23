@@ -129,8 +129,7 @@ int main()
 	}
 	sort(grupe.begin(), grupe.end(), [](studentas a, studentas b)
 		{
-			if (a.vard == b.vard) return a.pavard < b.pavard;
-			else return a.vard < b.vard;
+			return a.vard < b.vard;
 		});
 
 	
