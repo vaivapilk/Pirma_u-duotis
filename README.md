@@ -18,5 +18,8 @@ Po dar vieno paildymo, v0.1_vector.cpp programoje galima pasirinkti, jog mokinio
 # v0.2
 Toliau realizuojant v0.1_vector.cpp, iš jo sukurtas v0.2.cpp. Padarytas nuskaitymas iš failo "kursiokai.txt", kai nežinoma, kiek pažymių bei kiek studentų bus. Taip pat vis dar galima pasirinkti vartotojui, ar skaičiuoti vidurkį, ar medianą. Išvedimui padaromas rikiavimas pagal vardą.
 
+# v0.3
+v0.2 pataisyta ir pridėta galimybė vartotojui pasirinkti, ar bus vykdomas skaitymas iš failo, ar jis pats įves duomenis. Pataisytas galutinio pažymio skaičiavimas (dabar jis gali būti skaičiuojamas ir nuo medianos). Duomenų tipai perkelti į Header failus, taip pat sukurtas Header failas funkcijoms aprašyti. Funkcijos padalintos į kelis .cpp failus dėl tvarkos. Panaudotas išimčių valdymas "Exception opening/reading/closing file".
+
 # v0.4
 Darbai vyksta
