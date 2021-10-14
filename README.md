@@ -22,4 +22,4 @@ Toliau realizuojant v0.1_vector.cpp, iš jo sukurtas v0.2.cpp. Padarytas nuskait
 v0.2 pataisyta ir pridėta galimybė vartotojui pasirinkti, ar bus vykdomas skaitymas iš failo, ar jis pats įves duomenis. Pataisytas galutinio pažymio skaičiavimas (dabar jis gali būti skaičiuojamas ir nuo medianos). Duomenų tipai perkelti į Header failus, taip pat sukurtas Header failas funkcijoms aprašyti. Funkcijos padalintos į kelis .cpp failus dėl tvarkos. Panaudotas išimčių valdymas "Exception opening/reading/closing file".
 
 # v0.4
-Darbai vyksta
+Toliau plečiant v0.3, sukurta generavimo funkcija, kurią iškvietus sugeneruojamas pasirinkto dydžio studentų ir jų pažymių sąrašas. Vardai ir pavardės generuojami šabloniškai "Vardas1, Vardas2" ir t.t. Sukurta rūšiavmo funkcija, kuri padalinta studentus į dvi kategorijas pagal pažymius (<5 ir priešingai). Surūšiuoti studentai išvedami į du naujus failus. Atliekama programos veikimo greičio (spartos) analizė. Pats vartotojas turi pasirinkti, kokio dydžio failas bus iš pradžių generuojamas. 
