@@ -19,7 +19,7 @@ int main()
 	vector<studentas> grupe;
 	vector<studentas> moksliukai;
 	vector<studentas> nesimoke;
-	int K = 10;
+	int K;
 
 	//pasirinkimas, ar ivesti rankiniu budu, ar is failo
 	char u;
@@ -56,23 +56,26 @@ int main()
 
 	if (u == 'f') {
 		
+		cout << "Iveskite kiek studentu norite faile: ";
+		cin >> K;
 		Timer t;
-		//generavimas(K);
+		generavimas(K);
 		cout << K << " elementu generavimas kuriant faila uztruko: " << t.elapsed() << endl;
-		Timer tt;
+		t.reset();
 		if (is_failo(grupe)) return 1;
-		cout << K << " elementu nuskaitymas is failo uztruko: " << tt.elapsed() << endl;
+		cout << K << " elementu nuskaitymas is failo uztruko: " << t.elapsed() << endl;
+		
 	}
 
-	Timer ttt;
+	Timer t;
 	dalinimas(uzk, grupe, moksliukai, nesimoke); 
-	cout << K << " elementu skirstymas i 2 grupes uztruko: " << ttt.elapsed() << endl;
+	cout << K << " elementu skirstymas i 2 grupes uztruko: " << t.elapsed() << endl;
 
 
 	std::ofstream d_m("rez_moksliukai.txt");
 	std::ofstream d_n("rez_nesimoke.txt");
 
-	Timer t1;
+	t.reset();
 	d_m << setw(15) << left << "Pavarde " << setw(15) << "Vardas ";
 
 	if (uzk == 'v') {
@@ -96,9 +99,9 @@ int main()
 		}
 	}
 	d_m.close();
-	cout << K << " elementu moksliuku grupes irasymas i faila uztruko: " << t1.elapsed() << endl;
+	cout << K << " elementu moksliuku grupes irasymas i faila uztruko: " << t.elapsed() << endl;
 
-	Timer t2;
+	t.reset();
 	d_n << setw(15) << left << "Pavarde " << setw(15) << "Vardas ";
 
 	if (uzk == 'v') {
@@ -121,7 +124,7 @@ int main()
 		}
 	}
 	d_n.close();
-	cout << K << " elementu nesimokiusiu grupes irasymas i faila uztruko: " << t2.elapsed() << endl;
+	cout << K << " elementu nesimokiusiu grupes irasymas i faila uztruko: " << t.elapsed() << endl;
 
 	//remove("rez_moksliukai.txt");
 	//remove("rez_nesimoke.txt");
