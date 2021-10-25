@@ -23,3 +23,9 @@ v0.2 pataisyta ir pridėta galimybė vartotojui pasirinkti, ar bus vykdomas skai
 
 # v0.4
 Toliau plečiant v0.3, sukurta generavimo funkcija, kurią iškvietus sugeneruojamas pasirinkto dydžio studentų ir jų pažymių sąrašas. Vardai ir pavardės generuojami šabloniškai "Vardas1, Vardas2" ir t.t. Sukurta rūšiavmo funkcija, kuri padalinta studentus į dvi kategorijas pagal pažymius (<5 ir priešingai). Surūšiuoti studentai išvedami į du naujus failus. Atliekama programos veikimo greičio (spartos) analizė. Pats vartotojas turi pasirinkti, kokio dydžio failas bus iš pradžių generuojamas. 
+Skirtingų failų palyginimai:
+
+![t1](https://user-images.githubusercontent.com/56174822/138706581-11e42d4f-aa4a-4b0f-9975-36634460ebff.PNG)
+![t2](https://user-images.githubusercontent.com/56174822/138706655-1a9e1f78-0a46-44e8-bc42-1e86a003eebc.PNG)
+![t3](https://user-images.githubusercontent.com/56174822/138706672-0b5f44de-4562-4700-a49a-b840df953c99.PNG)
+![t4](https://user-images.githubusercontent.com/56174822/138706696-11c77c46-42c4-42c3-b933-0fa6ad46350d.PNG)
