@@ -29,3 +29,6 @@ Skirtingų failų palyginimai:
 ![t2](https://user-images.githubusercontent.com/56174822/138706655-1a9e1f78-0a46-44e8-bc42-1e86a003eebc.PNG)
 ![t3](https://user-images.githubusercontent.com/56174822/138706672-0b5f44de-4562-4700-a49a-b840df953c99.PNG)
 ![t4](https://user-images.githubusercontent.com/56174822/138706696-11c77c46-42c4-42c3-b933-0fa6ad46350d.PNG)
+
+# v0.5
+Intel(R) Core(TM) i5-1035G1 CPU @ 1.00GHz   1.19 GHz, RAM 8,00 GB (7,77 GB usable), ADATA 256GB
