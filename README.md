@@ -31,4 +31,25 @@ Skirtingų failų palyginimai:
 ![t4](https://user-images.githubusercontent.com/56174822/138706696-11c77c46-42c4-42c3-b933-0fa6ad46350d.PNG)
 
 # v0.5
-Intel(R) Core(TM) i5-1035G1 CPU @ 1.00GHz   1.19 GHz, RAM 8,00 GB (7,77 GB usable), ADATA 256GB
+v0.4 pataisyta ir dabar duomenų failas yra generuojamas eilutėmis, kad būtų greičiau, taip pat sukurti header failai kiekvienam .cpp failui, kad būtų tvarkingiau. Šioje versijoje matuojamas duomenų nuskaitymo bei studentų rūšiavimo greitis naudojant list konteinerį (greitis lyginamas su vector konteineriu). Per VisualStudio padarytas Release x64.
+
+Sistemos parametrai:
+Intel(R) Core(TM) i5-1035G1 CPU @ 1.00GHz   1.19 GHz, RAM 8,00 GB, ADATA 256GB.
+
+**Vector** sparta:
+
+![v1k](https://user-images.githubusercontent.com/56174822/140042340-2d8cb966-98d1-4953-bfb0-49acb1c444fa.PNG)
+![v10k](https://user-images.githubusercontent.com/56174822/140042392-6ecc25c8-7d28-47c6-be7e-0f27dadb91af.PNG)
+![v100k](https://user-images.githubusercontent.com/56174822/140042405-52322076-8526-4a57-96eb-1b319737809a.PNG)
+![v1m](https://user-images.githubusercontent.com/56174822/140042430-9b4455c0-762e-4da2-8f3c-ea0d6b7359ed.PNG)
+![v10m](https://user-images.githubusercontent.com/56174822/140042443-d8284411-ea7e-4825-9bee-a06760ebf938.PNG)
+
+**List** sparta:
+
+![l1k](https://user-images.githubusercontent.com/56174822/140042592-38837042-c565-4dd4-a3ab-9880232761d9.PNG)
+![l10k](https://user-images.githubusercontent.com/56174822/140042610-2bf5ac89-5734-4cbe-a4e5-9c6d26d5c8c7.PNG)
+![l100k](https://user-images.githubusercontent.com/56174822/140042632-49d92fd8-4b56-4304-a533-8ae51f81325c.PNG)
+![l1m](https://user-images.githubusercontent.com/56174822/140042646-ffdeaccb-43e5-4dd2-b076-1b6a032362fe.PNG)
+![l10m](https://user-images.githubusercontent.com/56174822/140042657-9a56191a-4c1b-4efd-9b2d-083f67563d07.PNG)
+
+
