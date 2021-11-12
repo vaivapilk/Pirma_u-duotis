@@ -38,6 +38,12 @@ v0.5 daug pertvarkyta, sumažinta .cpp ir .h failų, kad nepasimesti. Kadangi bu
 Sistemos parametrai:
 Intel(R) Core(TM) i5-1035G1 CPU @ 1.00GHz   1.19 GHz, RAM 8,00 GB, ADATA 256GB.
 
+![1k](https://user-images.githubusercontent.com/56174822/141521904-848e8300-53f3-4599-8b04-aee28e742bb7.PNG)
+![10k](https://user-images.githubusercontent.com/56174822/141521918-4659b50e-7431-4367-93ff-c6eedeb3317f.PNG)
+![100k](https://user-images.githubusercontent.com/56174822/141521964-1a8c801e-b391-408e-ab5e-00dba770f8d8.PNG)
+![1M](https://user-images.githubusercontent.com/56174822/141521971-6e62b589-1703-418e-b726-74a5862e30b4.PNG)
+![10M](https://user-images.githubusercontent.com/56174822/141521979-9dedf032-5a6c-40f5-9808-e960de7b7c5b.PNG)
+
 
 
 
