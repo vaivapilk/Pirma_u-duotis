@@ -7,3 +7,4 @@ Pirma užduotis VU kursui "Objektinis programavimas su C++"
 + Žiūrėti trečią versiją čia [v0.3](https://github.com/vaivapilk/Pirma_uzduotis/tree/v0.3)
 + Žiūrėti ketvirtą versiją čia [v0.4](https://github.com/vaivapilk/Pirma_uzduotis/tree/v0.4)
 + Žiūrėti penktą versiją čia [v0.5](https://github.com/vaivapilk/Pirma_uzduotis/tree/v0.5.2)
++ Žiūrėti šeštą versiją čia [v1.0](https://github.com/vaivapilk/Pirma_uzduotis/tree/v1.0)
