@@ -5,8 +5,11 @@ Pirma užduotis VU kursui "Objektinis programavimas su C++"
 Tuomet iš šių duomenų, suskaičiuoja galutinį balą pagal formulę:
 **Galutinis = 0.4 * vidurkis + 0.6 * egzaminas**
 
-# v1.1
-Toliau pertvarkyta v0.5: sukurta išvedimo į failą funkcija. Šioje realizacijoje naudojamos dvi strategijos, pirma jau realizuota v0.5, todėl dabar pridėta antra strategija:  Bendro studentų konteinerio (vector ir list) skaidymas (rūšiavimas) panaudojant tik vieną naują konteinerį: "nesimoke". Sukurti globalūs kintamieji. LIST konteinerio 2 strategijai panaudotas `erase` ir `remove_if`, VECTOR panaudota `partition` ir `copy`.
+### Naudojimosi instrukcija:
+Paleidus programą paklausiama, ar vartotojas norės įvesti duomenis pats, ar norės nuskaitymo iš failo, todėl reikia įvestis atitinkamas raides: įvedus 'p' - reiškia pats, o 'f' - iš failo. Tada klausiama, ar norima, kad galutinis balas būtų suskaičiuotas pagal vidurkį (reikia įvesti'v') arba pagal medianą (reikia įvesti'm'). 
+
+# v1.0
+Toliau pertvarkyta v0.5: sukurta išvedimo į failą funkcija. Šioje realizacijoje naudojamos dvi strategijos, pirma jau realizuota v0.5, todėl dabar pridėta antra strategija:  Bendro studentų konteinerio (vector ir list) skaidymas (rūšiavimas) panaudojant tik vieną naują konteinerį: "nesimoke". Sukurti globalūs kintamieji. LIST konteinerio 2 strategijai panaudotas `erase` ir `remove_if`, VECTOR panaudota `partition` ir `copy`. Paruoštas `CMakeLists.txt`.
 
 ![1k](https://user-images.githubusercontent.com/56174822/142000663-340c4401-a317-4ee7-99a4-b6f70198d403.PNG)
 ![10k](https://user-images.githubusercontent.com/56174822/142000695-a95de01a-b729-4ac5-ba95-7cfb7711e3a1.PNG)
@@ -16,6 +19,8 @@ Kadangi 2 strategija su LIST labai ilgai užtrunka, su 1M ir 10M jos netikrinau:
 
 ![1M](https://user-images.githubusercontent.com/56174822/142003019-be1aed5b-f364-4b50-91ca-9fb651116c1d.PNG)
 ![10M](https://user-images.githubusercontent.com/56174822/142003034-822578e2-ecf4-423a-bbfc-72fabcfeb879.PNG)
+
+Taigi matome, kad rūšiavimas naudojant pirmą strategiją užtrunka palyginus greitai, tačiau dar greičiau galima surūšiuoti naudojant 2 strategiją su VECTOR `partition` ir `copy`. Naudoti antrą strategiją su LIST `erase` ir `remove_if` neapsimoka.
 
 
 ## v0.5.2
